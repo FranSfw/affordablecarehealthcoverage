@@ -4,6 +4,19 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 .header {
     background: #ffffff;
     padding: 2px;
@@ -11,29 +24,46 @@
     display: flex;
     justify-content: center;
 }
-.header img{
+
+.header img {
     width: 240px;
     text-align: center;
     display: flex;
 }
-.mainRegion{
+
+.mainRegion {
     max-width: 880px;
     margin: 0 auto;
     text-align: center;
 }
-.mainRegion h1{
+
+.mainRegion h1 {
     color: #dd0707;
     font-size: 24px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 18px;
+    margin-bottom: 18px;
 
 }
-.mainRegion h2{
+
+.mainRegion h2 {
     color: #ff0000;
     font-size: 20px;
-    background-color: #f1f8ff;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
-.grnButton{
+
+.mainRegion h3 {
+    font-size: 25px !important;
+    font-weight: 500 !important;
+    line-height: 1.3;
+    color: #242424;
+}
+
+
+.grnButton {
     text-align: center;
     background-color: #00b67a;
     border-radius: 30px;
@@ -46,27 +76,89 @@
     display: block;
     max-width: 250px;
     margin: 17px auto;
+    cursor: pointer;
 }
+.grnButton:hover {
+    text-align: center;
+    background-color: #1fbf8a;
+    border-radius: 30px;
+    padding: 15px 0px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none !important;
+    display: block;
+    max-width: 250px;
+    margin: 17px auto;
+    cursor: pointer;
+}
+
 .callBefore {
+    padding: 10px;
     background: #fff;
     width: 100%;
     position: fixed;
     bottom: 0px;
-    text-align: center
+    text-align: center;
 }
-.yllButton{
-    color: #fff;
-    background-color: #f7b500;
+
+.callBefore h5 {
+    font-size: 20px;
+    font-weight: lighter;
 }
-.footerp1{
+
+.yllButton {
+    background-color: #e9a800;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.yllButton i {
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.footerp1 {
     color: rgb(0, 49, 99);
     font-size: 21px;
-}
-.footerp2{
-    color: #8f8d9b;
-}
-.footerp3{
-    font-size: 13px;
-    margin-bottom: 50px;
     margin-top: 50px;
+    margin-bottom: 90px;
+    border-bottom: 1px solid #57575762;
+}
+
+.footerp2 {
+    color: #8f8d9b;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 1.3em;
+}
+
+.footerp3 {
+    font-size: 13px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.backgrnd {
+    background-color: #f1f8ff;
+
+}
+.hidden {
+    display: none;
+}
+.box {
+    text-align: center;
+    padding: 10px 7px;
+    background-color: #fff;
+    border-top: 5px solid #00007c;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, .2);
+    transition: all .2s ease;
 }
