@@ -35,6 +35,8 @@ p {
     max-width: 880px;
     margin: 0 auto;
     text-align: center;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .mainRegion h1 {
@@ -94,29 +96,8 @@ p {
     cursor: pointer;
 }
 
-.callBefore {
-    padding: 10px;
-    background: #fff;
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
-    text-align: center;
-}
 
-.callBefore h5 {
-    font-size: 20px;
-    font-weight: lighter;
-}
 
-.yllButton {
-    background-color: #e9a800;
-    color: #FFFFFF;
-    font-size: 18px;
-    padding: 5px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-left: 5px;
-}
 
 .yllButton i {
     font-size: 14px;
@@ -161,4 +142,48 @@ p {
     font-weight: 400;
     box-shadow: 0 0 7px 0 rgba(0, 0, 0, .2);
     transition: all .2s ease;
+}
+.box h1{
+    color: #2fbdaa;
+}
+.box h2{
+    font-weight: 300;
+    color: #000000;
+}
+.box h3{
+    font-weight: 600;
+}
+
+
+.callBefore {
+    padding: 10px;
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+}
+.callBefore h5 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+.yllButton {
+    background-color: #e9a800;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.orgButton {
+    background-color: #ff5600;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    display: block;
+    margin: 10px;
 }

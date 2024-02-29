@@ -14,40 +14,71 @@
     </div>
     <div class="mainRegion">
         <h1>ATTENTION: $6400 SUBSIDY ACT DEADLINE</h1>
-        
+
         <div id="mR1">
             <h2>Take this 2 questionnaire to see if you qualify</h2>
             <h3>Is your Yearly Income Below $50,000 ?</h3>
             <a id="btnYesR1" class="grnButton">Yes</a>
             <a id="btnNoR1" class="grnButton">No</a>
         </div>
-        <div id="mR2" >
+        <div id="mR2" class="hidden">
             <h2>Take this Short Questionnaire <span style="font-weight: 300;">to Qualify for Free.</span></h2>
             <h3>Are you on Medicare, Medicaid, VA or Tricare coverage ?</h3>
             <a id="btnYesR2" class="grnButton">Yes</a>
-            <a id="btnNoR2" btnNoR2 class="grnButton">No</a>
+            <a id="btnNoR2" class="grnButton">No</a>
         </div>
-        <div id="mR3" class="box">
-            <h2>Take this Short Questionnaire <span style="font-weight: 300;">to Qualify for Free.</span></h2>
-            <h3>Are you on Medicare, Medicaid, VA or Tricare coverage ?</h3>
-            <a id="btnR3" class="grnButton">(888) 506-0089</a>
+        <div id="mR3" class="box hidden">
+            <h1>Great News!</h1>
+            <h2>You Pre-Qualify for <strong style="color: #ff0000;">$6400 subsidy</strong> to help with food, gas, rent
+                and other bills as well as $0 health Coverage.</h2>
+            <h3><strong>Tap Below to Call and Activate Your Benefits</strong></h3>
+            <a id="btnR3" href="tel:8333382811" class="grnButton">(833) 338-2811</a>
         </div>
-        
+
         <footer>
             <p class="footerp1">
-                Americans have only <strong>3 days left to claim</strong>  their free subsidy card & get their <strong> $6400 </strong>benefit to help save for food, rent, gas, bills and other expenses. This benefit also includes $0, free health insurance.
-            <br><br><br><br><br></p>
+                Americans have only <strong>3 days left to claim</strong> their free subsidy card & get their <strong>
+                    $6400 </strong>benefit to help save for food, rent, gas, bills and other expenses. This benefit also
+                includes $0, free health insurance.
+                <br><br><br><br><br>
+            </p>
             <p class="footerp2">
-                Smart Insurance IQ INC is not an insurance or operating company but connects individuals with insurance providers and other affiliates. Plans are insured or covered by a Medicare Advantage organization with a Medicare contract and/or a Medicare-approved Part D sponsor. Enrollment in the plan depends on the plan's contract renewal with Medicare. Possible options include, but are not limited to Major Medical Plans, Short Term Plans, Christian Health Plans, Health Sharing Plans, discount cards and Fixed Indemnity Plans. Descriptions are for informational purposes only and subject to change. Smart Insurance IQ INC is not affiliated with any insurance plan nor does it represent or endorse any plan. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800 MEDICARE to get information on all of your options. By using this site, you acknowledge that you have read and agree to the Terms of Service, and Privacy Policy. Not affiliated with the U. S. government or federal Medicare program. A licensed agent may contact you regarding this insurance-related information.
+                Smart Insurance IQ INC is not an insurance or operating company but connects individuals with insurance
+                providers and other affiliates. Plans are insured or covered by a Medicare Advantage organization with a
+                Medicare contract and/or a Medicare-approved Part D sponsor. Enrollment in the plan depends on the
+                plan's contract renewal with Medicare. Possible options include, but are not limited to Major Medical
+                Plans, Short Term Plans, Christian Health Plans, Health Sharing Plans, discount cards and Fixed
+                Indemnity Plans. Descriptions are for informational purposes only and subject to change. Smart Insurance
+                IQ INC is not affiliated with any insurance plan nor does it represent or endorse any plan. We do not
+                offer every plan available in your area. Any information we provide is limited to those plans we do
+                offer in your area. Please contact Medicare.gov or 1-800 MEDICARE to get information on all of your
+                options. By using this site, you acknowledge that you have read and agree to the Terms of Service, and
+                Privacy Policy. Not affiliated with the U. S. government or federal Medicare program. A licensed agent
+                may contact you regarding this insurance-related information.
             </p>
             <p class="footerp3">
                 © Copyright <span id="year"></span> | All Rights Reserved
             </p>
         </footer>
-        
+
     </div>
     <div class="callBefore">
-        <h5>Call Before 9:00 PM EST<a href="tel:8884160405"><span class="yllButton"><i class="fa-solid fa-phone"></i>(888) 416-0405</span></a></h5>
+        <div>
+            <h5>Call Before 9:00 PM EST<a href="tel:8333382811"><span id="cBBtn" class=""><i
+                            class="fa-solid fa-phone"></i>(833) 338-2811</span></a></h5>
+            <script>
+                var w = window.innerWidth;
+                var cBBtn = document.getElementById("cBBtn");
+
+                if (w < 768) {
+                    cBBtn.classList.add("orgButton");
+                } else {
+                    cBBtn.classList.add("yllButton");
+                }
+            </script>
+        </div>
+
+
     </div>
     <script src="https://kit.fontawesome.com/61b348e506.js" crossorigin="anonymous"></script>
     <script src="/js/custom.js"></script>
